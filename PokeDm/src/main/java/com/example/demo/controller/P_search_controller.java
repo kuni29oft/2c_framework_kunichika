@@ -21,7 +21,7 @@ public class P_search_controller {
 			List<Map<String, Object>> resultList;
 
 			//SELECT文の実行
-			resultList = jdbcTemplate.queryForList("select * from users");
+			resultList = jdbcTemplate.queryForList("select * from demo");
 
 			//実行結果をmodelにしまってHTMLで出せるようにする。
 			model.addAttribute("selectResult", resultList);
