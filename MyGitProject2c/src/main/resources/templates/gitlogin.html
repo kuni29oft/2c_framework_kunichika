@@ -5,9 +5,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="@{/gitlogin}"method="POST">
-	login
+<form th:action="@{/gitlogin}"method="POST">
+	<h2>login</h2>
+	LOGIN:
 	<input type="text" name="login"><br>
+	PASSWORD:
 	<input type="text" name="pw">
 	<input type="submit">
 	

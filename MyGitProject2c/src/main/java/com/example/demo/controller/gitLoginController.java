@@ -10,9 +10,9 @@ public class gitLoginController {
 	public String doLoginGet() {
 		return "gitlogin";
 	}
-	@RequestMapping(path = "/mylogin", method = RequestMethod.POST)
+	@RequestMapping(path = "/gitlogin", method = RequestMethod.POST)
 	public String doLoginPost(String login,String pw) {
-		if(login.equals("gitlogin")&&pw.equals("gitpw")) {
+		if(login.equals("gitlogin")&& pw.equals("gitpw")) {
 			return "gititemlist";
 		}else {
 		return "gitlogin";
@@ -20,7 +20,5 @@ public class gitLoginController {
 	}
 	
 
-
-	
 
 }
